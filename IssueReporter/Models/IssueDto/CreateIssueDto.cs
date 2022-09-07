@@ -1,27 +1,35 @@
-﻿namespace IssueReporter.Entites
-{
-    public class Issue
-    {
-        public int Id { get; set; }
-        public string RefId { get; set; }
-        public string Topic { get; set; }
-        public string Description { get; set; }
-        public string Reporter { get; set; }
-        public int ReporterId { get; set; }
-        public string ReporterEmail { get; set; }
-        public Status Status { get; set; }
-        public DateTime Created { get; set; }
-        public DateTime? Modified { get; set; }
-        public DateTime? Resolved { get; set; }
-        public int? AssigneeId { get; set; }
-        public virtual User User { get; set; }
-    }
+﻿using IssueReporter.Entites;
+using System.ComponentModel.DataAnnotations;
 
-    public enum Status
+namespace IssueReporter.Models.IssueDto
+{
+    public class CreateIssueDto
     {
-        Assigned,
-        Unassigned,
-        InProgress,
-        Resolved
+        [Required]
+        public string RefId { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        [MinLength(5)]
+        public string Topic { get; set; }
+
+        [Required]
+        [MaxLength(1500)]
+        [MinLength(10)]
+        public string Description { get; set; }
+
+        [Required]
+        public string Reporter { get; set; }
+
+        public int ReporterId { get; set; }
+
+        [Required]
+        public string ReporterEmail { get; set; }
+
+        public Status Status { get; set; }
+
+        [Required]
+        public DateTime Created { get; set; }
+        public int? AssigneeId { get; set; }
     }
 }

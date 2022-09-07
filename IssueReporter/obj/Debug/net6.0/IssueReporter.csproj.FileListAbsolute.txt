@@ -54,3 +54,5 @@ E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\obj\Debug\net6.0\refint\Is
 E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\obj\Debug\net6.0\IssueReporter.pdb
 E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\obj\Debug\net6.0\IssueReporter.genruntimeconfig.cache
 E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\obj\Debug\net6.0\ref\IssueReporter.dll
+E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\bin\Debug\net6.0\AutoMapper.dll
+E:\C# Repo\Issue Reporter\IssueReporter\IssueReporter\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
